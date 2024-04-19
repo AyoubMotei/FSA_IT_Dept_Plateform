@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Hash;
-use App\Controllers\Auth;
+use Auth;
 use App\Models\Etudiant;
 use Illuminate\Support\Str;
 

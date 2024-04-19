@@ -21,7 +21,8 @@ class Professeur extends Authenticatable
         'email',
         'password',
     ];
-
+    
+protected $guard = 'professeur';
     /**
      * The attributes that should be hidden for serialization.
      *

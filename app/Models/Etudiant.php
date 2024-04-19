@@ -22,6 +22,8 @@ class Etudiant extends Authenticatable
         'password',
     ];
 
+protected $guard = 'etudiant';
+
     /**
      * The attributes that should be hidden for serialization.
      *
