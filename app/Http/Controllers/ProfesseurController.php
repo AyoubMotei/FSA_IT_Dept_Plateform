@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Hash;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Professeur;
 use Illuminate\Support\Str;
 

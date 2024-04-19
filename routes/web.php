@@ -26,7 +26,7 @@ require __DIR__.'/auth.php';
 
 
 ///////////////////////////////////////////////
-Route::middleware('admin')->group(function (){
+Route::middleware('auth:admin')->group(function (){
     Route::get('admin/dashboard', [AdminController::class, 'dashboard'])->name('admin_dashboard');
     });
 
@@ -44,7 +44,7 @@ Route::middleware('admin')->group(function (){
 
 ///////////////////////////////////////////////
 
-Route::middleware('professeur')->group(function (){
+Route::middleware('auth:professeur')->group(function (){
     Route::get('professeur/dashboard', [ProfesseurController::class, 'dashboard'])->name('professeur_dashboard');
     });
 
@@ -60,7 +60,7 @@ Route::middleware('professeur')->group(function (){
 
 ///////////////////////////////////////////////
 
-Route::middleware('etudiant')->group(function (){
+Route::middleware('auth:etudiant')->group(function (){
     Route::get('etudiant/dashboard', [EtudiantController::class, 'dashboard'])->name('etudiant_dashboard');
     });
 
